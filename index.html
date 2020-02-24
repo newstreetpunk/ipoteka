@@ -330,7 +330,10 @@
 				<p>Сейчас мы продолжаем вносить корректировки в рекламные кампании. Чтобы вы понимали, насколько меняется картина, вот скриншот за последнюю неделю. Из таблицы видно, что нам удалось снизить стоимость конверсии до 104 рублей в кампании для РСЯ в Ростовской области. Будем подтягивать остальные кампании к этому показателю!</p>
 				<br>
 				<div class="img-zoom-wrap">
-					<img src="img/table.jpg" alt="Таблица">
+					<img id="img" src="img/table.jpg" alt="Таблица">
+				</div>
+				<div class="zoom-btn-wrap">
+					<span id="zoom-btn">Нажмите, чтобы увеличить</span>
 				</div>
 			</div>
 			<!-- /.container -->
@@ -380,7 +383,12 @@
 	</main>
 	
 
-	<script src="js/scripts.min.js"></script>
+	<script>
+		document.getElementById('zoom-btn').onclick = function() {
+			document.getElementById('img').classList.toggle('zoom');
+		}
+	</script>
+
 
 </body>
 </html>
