@@ -1,0 +1,131 @@
+/*==========  Desktop First  ==========*/
+
+@media (max-width: 1450px)
+	.desktop
+		width: 95%
+
+// ≥1200px
++media-breakpoint-down(lg)
+	.hero .subtitle
+		font-size: 16px
+	.geography__img
+		width: 50%
+	.geography__text
+		width: 45%
+
+// ≥992px
++media-breakpoint-down(md)
+	.container
+		max-width: 95%
+	.hero .title
+		font-size: 30px
+
+
+// ≥768px
++media-breakpoint-down(sm)
+	.container
+		max-width: 100%
+	.hero-wrap
+		flex-direction: column
+	.hero-wrap>div
+		width: 100%
+	.hero-wrap>div img
+		margin: 0 auto 25px
+	section, .spaces .gray-bg
+		padding: 50px 0
+	.site-content__wrap
+		flex-direction: column
+	.site-content-bold
+		font-size: 18px
+	.site-content-text, .site-content .text-box
+		width: 100%
+	.site-content .text-box
+		margin-top: 15px
+	.site-content__img
+		margin: 50px 0
+		width: 100%
+	.site-content .text-box p
+		font-size: 18px
+	.mw90
+		max-width: 100%
+	.geography__wrap, .spaces__wrap
+		flex-direction: column
+	.geography__img, .geography__text
+		width: 100%
+	.geography__img
+		img
+			margin: 0 auto 28px
+	.spaces__text, .spaces__wrap img
+		width: 100%
+	.spaces__wrap img
+		max-width: 380px
+		margin: 30px auto 0
+	.spaces-card-row
+		flex-direction: column
+		margin-top: 0
+	.spaces-card, ul.bold-style li
+		width: 100%
+	.spaces-card:first-child()
+		margin-bottom: 25px
+	.month-title
+		margin: 50px 0 40px
+	.custom-list
+		flex-direction: column
+		margin-bottom: 25px
+		li
+			width: 100%
+			margin-bottom: 25px
+	.desktop
+		margin: 50px 0
+	.important__wrap
+		flex-direction: column
+	.important__text
+		width: 100%
+		margin-bottom: 30px
+	.important__img
+		width: 100%
+	
+// ≥576px
++media-breakpoint-down(xs)
+	.hero .title
+		font-size: 25px
+	.text-box
+		padding: 25px 20px
+	section h2
+		line-height: 1.3
+		margin-bottom: 25px
+		background: linear-gradient(66deg,#fd074e 0,#7044f5 80%)
+		background-clip: text
+		-webkit-text-fill-color: transparent
+		text-fill-color: transparent
+		color: $accent2
+	.custom-list-questions span
+		width: 100%
+		text-align: center
+		padding: 15px
+		margin-left: 0
+		margin-right: 0
+		margin-bottom: 0
+	.month-title
+		font-size: 20px
+	.desktop
+		display: none
+	.mobile
+		display: block
+		margin: 30px auto
+	p.tac
+		text-align: left
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)

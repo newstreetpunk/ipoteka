@@ -1,0 +1,255 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.6
+	font-family: $default-font
+	overflow-x: hidden
+	font-weight: normal
+	color: $text
+	letter-spacing: .36px
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+a
+	color: $accent
+	font-weight: 600
+	text-decoration: underline
+	transition: all .2s ease
+	&:hover
+		text-decoration: none
+		color: $accent
+img
+	display: block
+	max-width: 100%
+	height: auto
+
+b, strong
+	font-weight: 600
+
+.df
+	display: flex
+h1, h2, h3
+	font-weight: bold
+.text-box
+	box-shadow: 0 22px 49px rgba(0, 0, 0, 0.14)
+	border-radius: 15px
+	background-color: #ffffff
+	padding: 35px 25px
+	color: $text
+.accent
+	color: $accent2
+.accent-red
+	color: $accent
+.tac
+	text-align: center
+.mw90
+	max-width: 90%
+	width: 100%
+	margin: 0 auto
+ol, ul
+	padding: 0
+	margin-bottom: 0
+	list-style: none
+ul
+	li
+		margin-bottom: 10px
+	>li
+		>ul
+			padding-left: 15px
+			margin-top: 10px
+
+section
+	padding: 85px 0
+	h2
+		background: linear-gradient(66deg, $accent 0%, $accent2 25%)
+		background-clip: text
+		-webkit-text-fill-color: transparent
+		text-fill-color: transparent
+		color: $accent2
+		font-size: 25px
+		letter-spacing: .5px
+		margin-bottom: 20px
+.gray-bg
+	background-color: #f5f5f5
+.blue-link
+	color: #1b7eb7
+	&:hover
+		color: #1b7eb7
+
+
+.hero
+	background-image: linear-gradient(30deg, $accent 0%, $accent2 100%)
+	color: #fff
+	&-wrap
+		min-height: 33vmax
+		align-items: center
+		justify-content: space-between
+		padding: 4vmax 0
+		> div
+			width: 50%
+			img
+				max-width: 550px
+				width: 100%
+	.title
+		font-size: 35px
+		line-height: 1.35
+		letter-spacing: .7px
+		margin-bottom: 0
+	.subtitle
+		font-size: 18px
+		margin: 25px 0 30px
+		display: block
+		line-height: 1
+	.text-box
+		box-shadow: none
+
+.site-content
+	padding-bottom: 0
+	&__wrap
+		justify-content: space-between
+	&-text
+		width: 45%
+	.text-box
+		width: 52%
+		margin-top: -15px
+	&-bold
+		font-size: 25px
+		font-weight: bold
+		letter-spacing: .5px
+	ol
+		li
+			margin-bottom: 10px
+	&__img
+		width: 95%
+		margin: 100px auto 50px
+
+.geography
+	&__wrap
+		align-items: center
+		justify-content: space-between
+	&__text
+		width: 40%
+ul.bold-style
+	font-weight: 600
+	flex-wrap: wrap
+	li
+		width: 50%
+.spaces
+	padding-top: 0
+	.gray-bg
+		padding: 95px 0 200px
+	&__text
+		width: 62%
+	&__wrap
+		justify-content: space-between
+		img
+			width: 34%
+			height: 100%
+	&-card
+		width: 48%
+		img
+			margin: 40px auto 0
+		&-row
+			justify-content: space-between
+			margin-top: -140px
+
+.gradient-bg
+	background-image: linear-gradient(66deg, #fd074e 0%, #7044f5 100%), linear-gradient(to top, #653ed7 0%, #1a9faf 100%)
+
+.month
+	max-width: 1070px
+	width: 100%
+	margin: 0 auto
+	&-title
+		font-size: 30px
+		font-weight: bold
+		letter-spacing: .6px
+		color: #fff
+		border-radius: 40px
+		padding: 15px 45px
+		margin: 90px 0 60px
+		display: inline-block
+
+th, td
+	text-align: center
+
+.table
+	width: 1070px
+	border: none
+	background-color: #f5f5f5
+	margin: 15px 0 40px
+	border-radius: 15px
+	th
+		border: none
+.table thead th
+	border: none
+tbody
+	border-top: 2px solid #fff
+.custom-list
+	display: flex
+	justify-content: space-between
+	margin-top: 35px
+	margin-bottom: 50px
+	li
+		display: flex
+		align-items: center
+		width: 48%
+		span
+			width: 60px
+			height: 60px
+			border-radius: 50%
+			display: flex
+			justify-content: center
+			align-items: center
+			flex: 1 0 auto
+			color: #fff
+			font-size: 30px
+			font-weight: 600
+			margin-right: 19px
+
+.custom-list-questions
+	flex-wrap: wrap
+	justify-content: center
+	margin: 10px 0 30px
+	span
+		color: #fff
+		padding: 15px 30px
+		border-radius: 30px
+		margin: 15px
+
+.mobile
+	display: none
+.desktop
+	margin: 70px auto
+.gray-sect
+	background-color: #f5f5f5
+
+.important
+	&__wrap
+		justify-content: space-between
+		align-items: center
+	&__text
+		width: 65%
+	&__img
+		width: 35%
+		img
+			margin: 0 auto
+
+
+@import "media"
